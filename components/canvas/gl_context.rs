@@ -116,7 +116,7 @@ impl GLContextFactory {
         })
     }
 
-    fn gl_version(webgl_version: WebGLVersion) -> GLVersion {
+    pub fn gl_version(webgl_version: WebGLVersion) -> GLVersion {
         match webgl_version {
             WebGLVersion::WebGL1 => GLVersion::Major(2),
             WebGLVersion::WebGL2 => GLVersion::Major(3),
